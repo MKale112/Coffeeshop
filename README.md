@@ -2,4 +2,4 @@
 
 # Hello World!
 
-Moj repo za potrebe Korisničkih Sučelja
+Naš repo za potrebe Korisničkih Sučelja
