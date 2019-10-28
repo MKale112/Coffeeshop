@@ -3,25 +3,22 @@ import { Link } from "gatsby"
 
 const IndexPage = () => 
 <div>                         
-  <h1> Teaching </h1>
+  <h1> TheBrewCrew </h1>
 
-  <h2> Examples: </h2>
+  <h2> Our Services: </h2>
   <ul>
     <li>
-      <Link to="/examples/example-1"> Example 1 </Link>
+      <Link to="/shop/shop"> Shop </Link>
     </li>
     <li>
-      <Link to="/examples/example-2"> Example 2 </Link>
-    </li>
-    <li>
-      <Link to="/examples/example-3"> Example 3 </Link>
+      <Link to="/blog/blog-page"> Blog </Link>
     </li>
   </ul>
 
-  <h2><Link to="/blog"> Blog </Link></h2>
+  <h2><Link to="/authorization/login-registration"> Sign In/Sign Up </Link></h2>
 </div>
 
-export default IndexPage                              // po modulu (u Javascriptu) možemo imat jedan default po moduliu, kad 
+export default IndexPage                              // po modulu (u Javascriptu) možemo imat jedan default po modulu, kad 
                                                       // svi ostali exporti moraju imat {} zagrade kad se importaju
 
                                                       // IndexPage je varijabla (React komponenta) i njena ARROW funkcija
