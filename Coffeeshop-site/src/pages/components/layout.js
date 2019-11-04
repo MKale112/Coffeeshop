@@ -1,6 +1,7 @@
-import React, { Children } from "react"
-import Navigation from "/Users/admin/Documents/GitHub/Coffeeshop/Coffeeshop/Coffeeshop-site/src/pages/components/navigation"
-import "/Users/admin/Documents/GitHub/Coffeeshop/Coffeeshop/Coffeeshop-site/src/pages/components/layout.css"
+import React from "react"
+
+import Navigation from "../components/navigation"
+import "../components/layout.css"
 
 const menuItems = [
     {
@@ -13,11 +14,15 @@ const menuItems = [
     },
 ]
 
-const Layout = ({ children }) => {
+// const myStyles = {
+//     backgroundColor: "#f0f0f0",
+// }
+
+const Layout = props => {
     return (
         <div className = "layout">
-            <Navigation menuItems={ menuItems }/>
-            {children}
+            <Navigation menuItems = { menuItems }/>
+            {props.children}
         </div>
     )
 }
