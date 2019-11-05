@@ -1,12 +1,9 @@
 import React from "react"                             // uključivanje libraryja
-import {Link} from "gatsby"
 import Layout from "../pages/components/layout"
 
 const IndexPage = () => (
-  <Layout>              
-    <h1> TheBrewCrew </h1>
-    <h2> Page index: </h2>
-    <h2><Link to="../authorization/login-registration"> Sign In/Sign Up </Link></h2>
+  <Layout>
+      <h1>Welcome to the Crew!</h1>
   </Layout>
 )
 
