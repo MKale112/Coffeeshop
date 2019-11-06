@@ -1,11 +1,12 @@
 import React from "react"
-import {Link} from "gatsby"
+import Layout from "../components/layout"
 
-const LoginAndRegistration = () => 
-<div>
-    <h1>Login and Registration form</h1>
+const LoginAndRegistration = () => (
+    <Layout>
+        <h1>Login and Registration</h1>
+    </Layout>
+)
+    
 
-    <h2><Link to="/">Home</Link></h2>
-</div>
 
 export default LoginAndRegistration

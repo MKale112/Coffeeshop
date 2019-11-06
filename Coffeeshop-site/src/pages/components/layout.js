@@ -6,7 +6,7 @@ import "../components/layout.css"
 const menuItems = [
     {
         text: "THEBREWCREW",
-        link: "../index",
+        link: "../",
     },
     {
         text: "THE CREW",

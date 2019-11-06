@@ -1,14 +1,11 @@
 import React from "react"
-import {Link} from "gatsby"
+import Layout from "../components/layout"
 
-const BlogPage = () => 
-<div>
-    <h1>This is the official Blog page</h1>
+const BlogPage = ({menuItems}) => (
+    <Layout>
+        <h1>Talk Coffee with us!</h1>
+    </Layout>
+)
 
-    <h2><Link to="/">Home</Link></h2>
-
-    <h2><Link to="/blog/blog-post">Blog post 1</Link></h2>
-
-</div>
 
 export default BlogPage
