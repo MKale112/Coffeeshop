@@ -1,52 +1,54 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Navigation from "../components/navigation"
+import Footer from "../components/footer"
+import "../components/layout.css"
+import Container from "../components/container"
 
-import Header from "./header"
-import "./layout.css"
+const SiteContainer = props => (
+  <div {...props} style={{ display: "flex", flexDirection: "column" }} />
+)
+
+const footerItems = [
+  {
+    text: "THEBREWCREW",
+    link: "../index",
+  },
+  {
+    text: "Privacy Policy",
+    link: "",
+  },
+  {
+    text: "Terms of Use",
+    link: "",
+  },
+]
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
+    {
+      site(siteMetadata: {}) {
         siteMetadata {
-          title
+          menuItems {
+            text
+            link
+          }
         }
       }
     }
   `)
+  const { menuItems } = data.site.siteMetadata
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <SiteContainer>
+        <Navigation menuItems={menuItems} />
+        {/* <Container>{children}</Container> */}
+        <div>{children}</div>
+        <Footer footerItems={footerItems} />
+      </SiteContainer>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

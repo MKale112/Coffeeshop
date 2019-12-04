@@ -2,6 +2,20 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    menuItems: [
+      {
+        text: "THE CREW",
+        link: "../src/pages/page-2.js",
+      },
+      {
+        text: "SHOP",
+        link: "../src/pages/shop.js",
+      },
+      {
+        text: "BLOG",
+        link: "../src/pages/blog.js",
+      },
+    ],
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -11,6 +25,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      // we added this plugin (which is a copy from the one above) to add the content
+      resolve: `gatsby-source-filesystem`, // directory to the allFiles option in GraphiQL
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
       },
     },
     `gatsby-transformer-sharp`,
