@@ -17,15 +17,44 @@ a:visited {
   color: #000000;
 }
 
-.navbar {
-  /* width: 100%;
-    position: fixed; */
-  padding: 15px 30px;
-  background-image: linear-gradient(#363636, #ffffff);
-}
-
-.container {
+.container-1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.container-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.services-block {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service-container {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: #66462f 2px solid;
+  padding: 30px 15px;
+  box-shadow: 0px 3px 6px -2px #363636;
+}
+
+.above-item {
+  align-self: flex-start;
 }

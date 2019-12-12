@@ -4,7 +4,7 @@ import logo from "../images/vectors/coffee-grinder.svg"
 import Container from "../components/container"
 
 const navList = {
-  padding: "0px",
+  padding: "0px 20px",
   margin: "0px",
   listStyleType: "none",
   display: "flex",
@@ -14,23 +14,23 @@ const navList = {
 }
 
 const navLinks = {
-  padding: "20px 20px 20px 20px",
-
-  // color: "#ffffff",
+  padding: "20px 60px 20px 0px",
+  color: "#ffffff",
 }
 
 const Logo = () => (
-  <Link to="../src/pages/index.js" style={{ display: "flex" }}>
+  <Link
+    to="../src/pages/index.js"
+    style={{ display: "flex", color: "#ffffff" }}
+  >
     <img
       src={logo}
-      style={{ width: "50px", height: "50px" }}
+      style={{ width: "50px", height: "50px", color: "#ffffff" }}
       alt="company logo"
     />
     <h2>THEBREWCREW</h2>
   </Link>
 )
-
-// const NavLink = ({ ...props }) => <Link {...props} />      ŠTA OVO ZNAČI KAD SU UNUTAR <Link> DIJELA SVI PROPS
 
 const Nav = ({ menuItems }) => {
   return (
@@ -46,7 +46,17 @@ const Nav = ({ menuItems }) => {
 
 const Navigation = ({ menuItems }) => {
   return (
-    <Container style={{ display: "flex" }}>
+    <Container
+      style={{
+        top: "0px",
+        width: "100%",
+        display: "flex",
+        position: "fixed",
+        padding: "25px 15px",
+        opacity: "0.85",
+        zIndex: "2",
+      }}
+    >
       <Logo />
       <Nav menuItems={menuItems} />
     </Container>

@@ -5,15 +5,29 @@ module.exports = {
     menuItems: [
       {
         text: "THE CREW",
-        link: "../src/pages/page-2.js",
+        link: "../",
       },
       {
         text: "SHOP",
-        link: "../src/pages/shop.js",
+        link: "../shop",
       },
       {
         text: "BLOG",
-        link: "../src/pages/blog.js",
+        link: "../blog",
+      },
+    ],
+    footerItems: [
+      {
+        text: "Privacy Policy",
+        link: "",
+      },
+      {
+        text: "©THEBREWCREW",
+        link: "../",
+      },
+      {
+        text: "Terms of Use",
+        link: "",
       },
     ],
     author: `@gatsbyjs`,
@@ -37,6 +51,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

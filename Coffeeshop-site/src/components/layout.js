@@ -1,3 +1,6 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+// ovo koristit odsad pa nadalje, stavi ga u sve šta ima styleove
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "../components/navigation"
@@ -9,26 +12,15 @@ const SiteContainer = props => (
   <div {...props} style={{ display: "flex", flexDirection: "column" }} />
 )
 
-const footerItems = [
-  {
-    text: "THEBREWCREW",
-    link: "../index",
-  },
-  {
-    text: "Privacy Policy",
-    link: "",
-  },
-  {
-    text: "Terms of Use",
-    link: "",
-  },
-]
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     {
       site(siteMetadata: {}) {
         siteMetadata {
+          footerItems {
+            text
+            link
+          }
           menuItems {
             text
             link
@@ -37,7 +29,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const { menuItems } = data.site.siteMetadata
+  const { menuItems, footerItems } = data.site.siteMetadata
 
   return (
     <>
