@@ -16,7 +16,7 @@ const Shop = ({ data }) => {
               <div style={{ display: "flex", alignItems: "center" }}>
                 <h3>Filter by:</h3>
                 <select id="product-filter">
-                  <option value="all"></option>
+                  <option value="all">All</option>
                   <option value="Coffee-1">Coffee Brand 1</option>
                   <option value="Coffee-2">Coffee Brand 2</option>
                   <option value="Coffee-3">Coffee Brand 3</option>
