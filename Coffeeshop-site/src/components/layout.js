@@ -6,7 +6,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import "../components/layout.css"
-import Container from "../components/container"
 
 const SiteContainer = props => (
   <div {...props} style={{ display: "flex", flexDirection: "column" }} />

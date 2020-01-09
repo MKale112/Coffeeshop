@@ -2,9 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Container from "../components/container"
 import Services from "../components/services"
-import { Link } from "gatsby"
 
 const IndexPage = ({ data }) => {
   const { heroImage } = data
