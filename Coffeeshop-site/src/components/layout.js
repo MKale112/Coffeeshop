@@ -28,13 +28,13 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
   const { menuItems, footerItems } = data.site.siteMetadata
 
   return (
     <>
       <SiteContainer>
         <Navigation menuItems={menuItems} />
-        {/* <Container>{children}</Container> */}
         <div>{children}</div>
         <Footer footerItems={footerItems} />
       </SiteContainer>

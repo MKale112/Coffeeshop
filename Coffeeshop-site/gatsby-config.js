@@ -30,6 +30,77 @@ module.exports = {
         link: "",
       },
     ],
+    productItems: [
+      {
+        imgPath:
+          "/Users/admin/Documents/GitHub/Coffeeshop/Coffeeshop/Coffeeshop-site/static/mockup1.jpg",
+        productName: "Colombian Blue",
+        itemDescription: "From the rolling hills of Columbia.",
+        price: "7.25$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Costa Rica Tarrazu",
+        itemDescription: "Costa Rica's finest beans. Do partake!",
+        price: "8$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Colombian Bucaramanga",
+        itemDescription:
+          "A mainstay in our classic coffee selection since the start.",
+        price: "8.99$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Monsooned Malabar",
+        itemDescription:
+          "Survived the worst and absorbed the best from the monsoon.",
+        price: "10$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Foundation",
+        itemDescription:
+          "Notes of FUDGE, TREANCE and DARK CHOCOLATE. Our darkest roast.",
+        price: "7.50$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Bright Note",
+        itemDescription:
+          "Notes of TANGERINE, CHOCOLATE & MACADAMIA. Sunshine in a cup.",
+        price: "5.75$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "House Roast",
+        itemDescription:
+          "Notes of CHOCOLATE, CARAMEL and CITRUS. The perfect roast.",
+        price: "9.50$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "The Mount Blend",
+        itemDescription:
+          "Notes of MILK CHOCOLATE, RED GRAPES and CARAMEL. Bold as hell.",
+        price: "7.84$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Firehouse Blend",
+        itemDescription:
+          "Notes of CHOCOLATE ORANGE, FOREST FRUITS and CINNAMON. A free spirit.",
+        price: "6.44$",
+      },
+      {
+        imgPath: "src/images/product image/mockup1.jpg",
+        productName: "Crisis Coffee",
+        itemDescription:
+          "Notes of BLACKCURRANT, HAZELNUTS and CINNAMON. When you need a lift.",
+        price: "5.84$",
+      },
+    ],
     author: `@gatsbyjs`,
   },
   plugins: [
