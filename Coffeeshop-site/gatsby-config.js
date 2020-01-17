@@ -37,12 +37,14 @@ module.exports = {
         productName: "Colombian Blue",
         itemDescription: "From the rolling hills of Columbia.",
         price: "7.25$",
+        category: "SingleOrigin",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
         productName: "Costa Rica Tarrazu",
         itemDescription: "Costa Rica's finest beans. Do partake!",
         price: "8$",
+        category: "SingleOrigin",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -50,6 +52,7 @@ module.exports = {
         itemDescription:
           "A mainstay in our classic coffee selection since the start.",
         price: "8.99$",
+        category: "SingleOrigin",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -57,6 +60,7 @@ module.exports = {
         itemDescription:
           "Survived the worst and absorbed the best from the monsoon.",
         price: "10$",
+        category: "SingleOrigin",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -64,6 +68,7 @@ module.exports = {
         itemDescription:
           "Notes of FUDGE, TREANCE and DARK CHOCOLATE. Our darkest roast.",
         price: "7.50$",
+        category: "FactoryRoast Chocolately",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -71,6 +76,7 @@ module.exports = {
         itemDescription:
           "Notes of TANGERINE, CHOCOLATE & MACADAMIA. Sunshine in a cup.",
         price: "5.75$",
+        category: "Chocolately Tangy",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -78,6 +84,7 @@ module.exports = {
         itemDescription:
           "Notes of CHOCOLATE, CARAMEL and CITRUS. The perfect roast.",
         price: "9.50$",
+        category: "Chocolately Tangy",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -85,6 +92,7 @@ module.exports = {
         itemDescription:
           "Notes of MILK CHOCOLATE, RED GRAPES and CARAMEL. Bold as hell.",
         price: "7.84$",
+        category: "Chocolately",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -92,6 +100,7 @@ module.exports = {
         itemDescription:
           "Notes of CHOCOLATE ORANGE, FOREST FRUITS and CINNAMON. A free spirit.",
         price: "6.44$",
+        category: "Chocolately Tangy",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
@@ -99,6 +108,7 @@ module.exports = {
         itemDescription:
           "Notes of BLACKCURRANT, HAZELNUTS and CINNAMON. When you need a lift.",
         price: "5.84$",
+        category: "Dark",
       },
     ],
     author: `@gatsbyjs`,

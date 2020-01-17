@@ -5,6 +5,7 @@ import ShopGrid from "../components/ShopGrid"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import SearchBox from "../components/SearchBox"
+import FilterBox from "../components/FilterBox"
 
 class Shop extends Component {
   constructor(props) {
@@ -21,18 +22,39 @@ class Shop extends Component {
   }
 
   onSearchChange = event => {
-    console.log(event.target.value)
     this.setState({ searchPhrase: event.target.value })
+  }
+
+  onFilterChange = event => {
+    console.log(event)
+    this.setState({ filterChoice: event.target.value })
   }
 
   render() {
     const { products, searchPhrase, filterChoice } = this.state
-    console.log(products)
     const { heroImage } = this.props.data
+
+    // const filteredProducts = products.filter(product => {
+    //   return product.productName
+    //     .toLowerCase()
+    //     .includes(searchPhrase.toLowerCase())
+    // })
+
     const filteredProducts = products.filter(product => {
-      return product.productName
-        .toLowerCase()
-        .includes(searchPhrase.toLowerCase())
+      if (
+        product.productName
+          .toLowerCase()
+          .includes(searchPhrase.toLowerCase()) &&
+        product.category.toLowerCase().includes(filterChoice.toLowerCase())
+      )
+        return product
+      else if (
+        product.productName
+          .toLowerCase()
+          .includes(searchPhrase.toLowerCase()) &&
+        filterChoice.toLowerCase() == "all"
+      )
+        return product
     })
 
     return (
@@ -44,7 +66,7 @@ class Shop extends Component {
               {/*search and filter div */}
               <h2>Our Blends:</h2>
               <SearchBox searchChange={this.onSearchChange} />
-              {/* <FilterBox /> */}
+              <FilterBox filterChange={this.onFilterChange} />
             </Container>
             <ShopGrid products={filteredProducts} />
           </Container>
@@ -73,6 +95,7 @@ export const query = graphql`
           itemDescription
           price
           productName
+          category
         }
       }
     }
