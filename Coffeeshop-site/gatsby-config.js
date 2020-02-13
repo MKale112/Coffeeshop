@@ -36,7 +36,7 @@ module.exports = {
           "/Users/admin/Documents/GitHub/Coffeeshop/Coffeeshop/Coffeeshop-site/static/mockup1.jpg",
         productName: "Colombian Blue",
         itemDescription: "From the rolling hills of Columbia.",
-        price: "7.25$",
+        price: "7$",
         category: "SingleOrigin",
       },
       {
@@ -51,7 +51,7 @@ module.exports = {
         productName: "Colombian Bucaramanga",
         itemDescription:
           "A mainstay in our classic coffee selection since the start.",
-        price: "8.99$",
+        price: "8$",
         category: "SingleOrigin",
       },
       {
@@ -67,7 +67,7 @@ module.exports = {
         productName: "Foundation",
         itemDescription:
           "Notes of FUDGE, TREANCE and DARK CHOCOLATE. Our darkest roast.",
-        price: "7.50$",
+        price: "7$",
         category: "FactoryRoast Chocolately",
       },
       {
@@ -75,7 +75,7 @@ module.exports = {
         productName: "Bright Note",
         itemDescription:
           "Notes of TANGERINE, CHOCOLATE & MACADAMIA. Sunshine in a cup.",
-        price: "5.75$",
+        price: "5$",
         category: "Chocolately Tangy",
       },
       {
@@ -83,7 +83,7 @@ module.exports = {
         productName: "House Roast",
         itemDescription:
           "Notes of CHOCOLATE, CARAMEL and CITRUS. The perfect roast.",
-        price: "9.50$",
+        price: "9$",
         category: "Chocolately Tangy",
       },
       {
@@ -91,7 +91,7 @@ module.exports = {
         productName: "The Mount Blend",
         itemDescription:
           "Notes of MILK CHOCOLATE, RED GRAPES and CARAMEL. Bold as hell.",
-        price: "7.84$",
+        price: "7$",
         category: "Chocolately",
       },
       {
@@ -99,7 +99,7 @@ module.exports = {
         productName: "Firehouse Blend",
         itemDescription:
           "Notes of CHOCOLATE ORANGE, FOREST FRUITS and CINNAMON. A free spirit.",
-        price: "6.44$",
+        price: "6$",
         category: "Chocolately Tangy",
       },
       {
@@ -107,7 +107,7 @@ module.exports = {
         productName: "Crisis Coffee",
         itemDescription:
           "Notes of BLACKCURRANT, HAZELNUTS and CINNAMON. When you need a lift.",
-        price: "5.84$",
+        price: "5$",
         category: "Dark",
       },
     ],

@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin: 10px;
+
+  max-width: 25rem;
+
+  border: 1px solid #363636;
+  border-radius: 5px;
+}
+
+.imageNprice {
+  position: relative;
+}
+
+.image {
+  height: auto;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 10px;
+  overflow: auto;
+}
+
+.price {
+  color: #f0f0f0;
+  font-weight: 400;
+}
+
+.dot {
+  height: 60px;
+  width: 60px;
+
+  background-color: #a91b08;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid #363636;
+  border-bottom: 1px solid #363636;
+
+  /* odi dolazi do problema, cijena ode u kut cilog ekrana umisto kut div-a glavnoga */
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  z-index: 1;
+}

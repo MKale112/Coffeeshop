@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React, { Component } from "react"
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -62,11 +64,61 @@ class Shop extends Component {
         <Layout>
           <Container>
             <Img fluid={heroImage.sharp.fluid} />
-            <Container>
-              {/*search and filter div */}
-              <h2>Our Blends:</h2>
-              <SearchBox searchChange={this.onSearchChange} />
-              <FilterBox filterChange={this.onFilterChange} />
+            <Container // zašto sve ove SX-ove od doli nemogu stavit u Container, neće da radi onda?!
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+                padding: "10px",
+              }}
+            >
+              <h2 // nego moran individualno
+                sx={{
+                  fontFamily: "wacky",
+                  fontWeight: "heading",
+                  fontSize: 32,
+                  px: 5,
+                }}
+              >
+                Our Blends:
+              </h2>
+              <div
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <h2
+                  sx={{
+                    fontFamily: "wacky",
+                    fontWeight: "heading",
+                    fontSize: 32,
+                  }}
+                >
+                  Search directly:
+                </h2>
+                <SearchBox searchChange={this.onSearchChange} />
+              </div>
+              <div
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <h2
+                  sx={{
+                    fontFamily: "wacky",
+                    fontWeight: "heading",
+                    fontSize: 32,
+                  }}
+                >
+                  Filter by category:
+                </h2>
+                <FilterBox filterChange={this.onFilterChange} />
+              </div>
             </Container>
             <ShopGrid products={filteredProducts} />
           </Container>
@@ -83,7 +135,7 @@ export const query = graphql`
     heroImage: file(relativePath: { eq: "images/beans.jpg" }) {
       id
       sharp: childImageSharp {
-        fluid(maxWidth: 1920, maxHeight: 500) {
+        fluid(maxWidth: 1920, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
           ...GatsbyImageSharpFluid
         }
       }

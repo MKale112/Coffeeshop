@@ -1,43 +1,55 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../images/vectors/coffee-grinder.svg"
+import logo from "../images/vectors/mill.svg"
 import Container from "../components/container"
-
-const navList = {
-  padding: "0px 20px",
-  margin: "0px",
-  listStyleType: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-end",
-  width: "100%",
-}
-
-const navLinks = {
-  padding: "20px 60px 20px 0px",
-  color: "#ffffff",
-}
+import styles from "./Navigation.module.css"
 
 const Logo = () => (
-  <Link
-    to="../src/pages/index.js"
-    style={{ display: "flex", color: "#ffffff" }}
-  >
-    <img
-      src={logo}
-      style={{ width: "50px", height: "50px", color: "#ffffff" }}
-      alt="company logo"
-    />
-    <h2>THEBREWCREW</h2>
+  <Link to="../">
+    <div
+      sx={{
+        px: 3,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <img
+        src={logo}
+        style={{ width: "50px", height: "50px" }}
+        alt="company logo"
+      />
+      <h2
+        sx={{
+          m: 0,
+          alignSelf: "baseline",
+          fontFamily: "wacky",
+          fontWeight: "heading",
+          fontSize: 50,
+          color: "primaryWhite",
+          px: 2,
+        }}
+      >
+        THEBREWCREW
+      </h2>
+    </div>
   </Link>
 )
 
 const Nav = ({ menuItems }) => {
   return (
-    <ul style={navList}>
+    <ul className={styles.navList}>
       {menuItems.map(({ text, link }) => (
-        <Link to={link} style={navLinks}>
-          <li>{text}</li>
+        <Link to={link}>
+          <li
+            className={styles.navLinks}
+            sx={{ fontFamily: "wacky", fontSize: 42, fontWeight: "heading" }}
+          >
+            {text}
+          </li>
         </Link>
       ))}
     </ul>
@@ -47,12 +59,15 @@ const Nav = ({ menuItems }) => {
 const Navigation = ({ menuItems }) => {
   return (
     <Container
+      className={styles.gradientEffect}
       style={{
+        padding: "0px",
         top: "0px",
         width: "100%",
         display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
         position: "fixed",
-        padding: "25px 15px",
         opacity: "0.85",
         zIndex: "2",
       }}

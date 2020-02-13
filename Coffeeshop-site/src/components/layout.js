@@ -8,7 +8,15 @@ import Footer from "../components/footer"
 import "../components/layout.css"
 
 const SiteContainer = props => (
-  <div {...props} style={{ display: "flex", flexDirection: "column" }} />
+  <div
+    {...props}
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "100vh",
+      margin: "0 auto",
+    }}
+  />
 )
 
 const Layout = ({ children }) => {
