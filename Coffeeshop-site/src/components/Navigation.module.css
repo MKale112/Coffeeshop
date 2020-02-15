@@ -10,10 +10,11 @@
 }
 
 .navLinks {
-  padding: 20px 40px 20px 0px;
+  padding: 15px 30px 15px 0px;
   color: white;
 }
 
-.gradientEffect {
-  background: linear-gradient(#0c0c0c 0%, rgba(0, 0, 0, 0));
+.customColor {
+  /* background: linear-gradient(#0c0c0c 0%, rgba(12, 12, 12, 0)); */
+  background-color: #0c0c0c;
 }

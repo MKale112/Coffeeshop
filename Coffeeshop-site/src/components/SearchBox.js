@@ -1,9 +1,16 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React, { Component } from "react"
 
 const SearchBox = ({ searchChange }) => {
   return (
     <div>
-      <input type="text" placeholder="Search" onChange={searchChange} />
+      <input
+        sx={{ fontSize: 10 }}
+        type="text"
+        placeholder="Search"
+        onChange={searchChange}
+      />
     </div>
   )
 }

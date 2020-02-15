@@ -1,44 +1,78 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
-import Container from "../components/container"
+import styles from "./Services.module.css"
 import crew from "../images/SVGs/meet-the-crew-logo.svg"
 import bag from "../images/SVGs/coffee-bag.svg"
 import blog from "../images/SVGs/blog-logo.svg"
 
-const Services = ({ props }) => {
+const Services = () => {
   return (
-    <Container className="services-grid">
-      <Container></Container>
-      <Container className="services-block">
-        <Container className="service-container">
-          <img
-            src={crew}
-            alt="meet-the-crew-logo"
-            style={{ width: "50px", height: "50px", color: "#ffffff" }}
-          />
-          <h3>MEET THE CREW</h3>
-          <p>The dedicated people who made all this possible</p>
-        </Container>
-        <Container className="service-container above-item">
-          <img
-            src={bag}
-            alt="coffee-bag"
-            style={{ width: "50px", height: "50px", color: "#ffffff" }}
-          />
-          <h3>BUY OUR BEANS</h3>
-          <p>Buy your beans straight from the roasters- No man in the middle</p>
-        </Container>
-        <Container className="service-container">
-          <img
-            src={blog}
-            alt="bloglogo"
-            style={{ width: "50px", height: "50px", color: "#000000" }}
-          />
-          <h3>TALK COFFEE</h3>
-          <p>Discuss your  favourite roasts and blends right here!</p>
-        </Container>
-      </Container>
-      <Container></Container>
-    </Container>
+    <div className={styles.servicesBlock}>
+      <div className={styles.serviceContainer}>
+        <img src={crew} alt="meet-the-crew-logo" className={styles.logoImg} />
+        <h3
+          sx={{
+            fontFamily: "wacky",
+            fontWeight: "heading",
+            fontSize: [14, 20, 24],
+          }}
+        >
+          MEET THE CREW
+        </h3>
+        <p
+          sx={{
+            fontFamily: "wacky",
+            fontWeight: "body",
+            fontSize: [14, 16, 18],
+          }}
+        >
+          The dedicated people who made all this possible
+        </p>
+      </div>
+      <div className={styles.serviceContainer} sx={{ alignSelf: "flex-start" }}>
+        <img src={bag} alt="coffee-bag" className={styles.logoImg} />
+        <h3
+          sx={{
+            fontFamily: "wacky",
+            fontWeight: "heading",
+            fontSize: [14, 20, 24],
+          }}
+        >
+          BUY OUR BEANS
+        </h3>
+        <p
+          sx={{
+            fontFamily: "wacky",
+            fontWeight: "body",
+            fontSize: [14, 16, 18],
+          }}
+        >
+          Buy your beans straight from the roasters- No man in the middle
+        </p>
+      </div>
+      <div className={styles.serviceContainer}>
+        <img src={blog} alt="bloglogo" className={styles.logoImg} />
+        <h3
+          sx={{
+            fontFamily: "wacky",
+            fontWeight: "heading",
+            fontSize: [14, 20, 24],
+          }}
+        >
+          TALK COFFEE
+        </h3>
+        <p
+          sx={{
+            fontFamily: "wacky",
+            fontWeight: "body",
+            fontSize: [14, 16, 18],
+          }}
+        >
+          Discuss your favourite roasts and blends right here!
+        </p>
+      </div>
+    </div>
   )
 }
 

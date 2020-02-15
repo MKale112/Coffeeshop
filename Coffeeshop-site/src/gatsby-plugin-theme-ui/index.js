@@ -4,12 +4,9 @@ export default {
     text: "#333",
     background: "#fff",
 
-    accent: "",
-    highlight: "",
-    mute: "",
-
     primary: "#639",
     secondary: "#ff6347",
+
     primaryWhite: "#ffffff",
     primaryRed: "#A91B08",
     primaryBrown: "#66426F",
@@ -36,11 +33,7 @@ export default {
   breakpoints: ["40em", "52em", "64em"],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  styles: {
-    amaticTitles: {
-      fontSize: "32",
-      fontFamily: "wacky",
-      fontWeight: "heading",
-    },
-  },
+  width: ["25px", "40px", "50px"],
+  height: ["25px", "40px", "50px"],
+  padding: ["10px", "20px", "30px"],
 }

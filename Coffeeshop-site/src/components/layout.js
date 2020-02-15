@@ -3,8 +3,8 @@ import { jsx } from "theme-ui"
 // ovo koristit odsad pa nadalje, stavi ga u sve šta ima styleove
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Navigation from "../components/navigation"
-import Footer from "../components/footer"
+import Navigation from "./Navigation"
+import Footer from "./Footer"
 import "../components/layout.css"
 
 const SiteContainer = props => (

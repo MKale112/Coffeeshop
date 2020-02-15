@@ -1,16 +1,25 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
+import { useEffect, useRef, useState } from "react"
 import { Link } from "gatsby"
 import logo from "../images/vectors/mill.svg"
-import Container from "../components/container"
+import Container from "./Container"
 import styles from "./Navigation.module.css"
+import {
+  Navbar,
+  //Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap"
 
 const Logo = () => (
   <Link to="../">
     <div
       sx={{
-        px: 3,
+        p: 3,
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
@@ -19,16 +28,19 @@ const Logo = () => (
     >
       <img
         src={logo}
-        style={{ width: "50px", height: "50px" }}
+        sx={{
+          width: ["25px", "40px", "50px"],
+          height: ["25px", "40px", "50px"],
+        }}
         alt="company logo"
       />
       <h2
         sx={{
           m: 0,
-          alignSelf: "baseline",
+          alignSelf: "center",
           fontFamily: "wacky",
           fontWeight: "heading",
-          fontSize: 50,
+          fontSize: [24, 36, 42],
           color: "primaryWhite",
           px: 2,
         }}
@@ -46,7 +58,11 @@ const Nav = ({ menuItems }) => {
         <Link to={link}>
           <li
             className={styles.navLinks}
-            sx={{ fontFamily: "wacky", fontSize: 42, fontWeight: "heading" }}
+            sx={{
+              fontFamily: "wacky",
+              fontSize: [24, 36, 42],
+              fontWeight: "heading",
+            }}
           >
             {text}
           </li>
@@ -58,8 +74,10 @@ const Nav = ({ menuItems }) => {
 
 const Navigation = ({ menuItems }) => {
   return (
-    <Container
-      className={styles.gradientEffect}
+    <Navbar
+      bg={styles.customColor}
+      variant="dark"
+      expand="lg"
       style={{
         padding: "0px",
         top: "0px",
@@ -68,13 +86,17 @@ const Navigation = ({ menuItems }) => {
         flexDirection: "row",
         alignItems: "center",
         position: "fixed",
-        opacity: "0.85",
+        opacity: "0.95",
         zIndex: "2",
       }}
+      className={styles.customColor}
     >
       <Logo />
-      <Nav menuItems={menuItems} />
-    </Container>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav menuItems={menuItems} />
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 

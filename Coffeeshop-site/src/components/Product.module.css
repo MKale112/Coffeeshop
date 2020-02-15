@@ -18,22 +18,27 @@
 
 .image {
   height: auto;
-  max-width: 400px;
+  max-width: 300px;
+  max-height: 100%;
   border-radius: 5px;
 }
 
 .description {
+  max-width: 300px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   padding: 10px;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .price {
   color: #f0f0f0;
   font-weight: 400;
+  align-self: center;
+  margin: 0;
 }
 
 .dot {
@@ -50,7 +55,6 @@
   border-right: 1px solid #363636;
   border-bottom: 1px solid #363636;
 
-  /* odi dolazi do problema, cijena ode u kut cilog ekrana umisto kut div-a glavnoga */
   position: absolute;
   top: 8px;
   left: 8px;

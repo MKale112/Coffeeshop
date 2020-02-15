@@ -36,12 +36,6 @@ class Shop extends Component {
     const { products, searchPhrase, filterChoice } = this.state
     const { heroImage } = this.props.data
 
-    // const filteredProducts = products.filter(product => {
-    //   return product.productName
-    //     .toLowerCase()
-    //     .includes(searchPhrase.toLowerCase())
-    // })
-
     const filteredProducts = products.filter(product => {
       if (
         product.productName
@@ -70,19 +64,9 @@ class Shop extends Component {
                 flexDirection: "row",
                 justifyContent: "space-evenly",
                 alignItems: "center",
-                padding: "10px",
+                padding: "100px 0px 20px 0px",
               }}
             >
-              <h2 // nego moran individualno
-                sx={{
-                  fontFamily: "wacky",
-                  fontWeight: "heading",
-                  fontSize: 32,
-                  px: 5,
-                }}
-              >
-                Our Blends:
-              </h2>
               <div
                 sx={{
                   display: "flex",
@@ -94,7 +78,9 @@ class Shop extends Component {
                   sx={{
                     fontFamily: "wacky",
                     fontWeight: "heading",
-                    fontSize: 32,
+                    px: 1,
+                    m: 0,
+                    fontSize: [16, 20, 24],
                   }}
                 >
                   Search directly:
@@ -112,7 +98,9 @@ class Shop extends Component {
                   sx={{
                     fontFamily: "wacky",
                     fontWeight: "heading",
-                    fontSize: 32,
+                    px: 1,
+                    m: 0,
+                    fontSize: [16, 20, 24],
                   }}
                 >
                   Filter by category:
@@ -135,7 +123,7 @@ export const query = graphql`
     heroImage: file(relativePath: { eq: "images/beans.jpg" }) {
       id
       sharp: childImageSharp {
-        fluid(maxWidth: 1920, maxHeight: 600, fit: COVER, cropFocus: CENTER) {
+        fluid(maxWidth: 1920, maxHeight: 800, fit: COVER, cropFocus: CENTER) {
           ...GatsbyImageSharpFluid
         }
       }

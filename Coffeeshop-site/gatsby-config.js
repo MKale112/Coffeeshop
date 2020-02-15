@@ -15,6 +15,10 @@ module.exports = {
         text: "BLOG",
         link: "../blog",
       },
+      {
+        text: "LOG IN/SIGN UP",
+        link: "../login-and-registration",
+      },
     ],
     footerItems: [
       {
@@ -123,8 +127,7 @@ module.exports = {
       },
     },
     {
-      // we added this plugin (which is a copy from the one above) to add the content
-      resolve: `gatsby-source-filesystem`, // directory to the allFiles option in GraphiQL
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
         path: `${__dirname}/content`,
