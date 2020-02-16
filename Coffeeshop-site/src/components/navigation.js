@@ -55,7 +55,7 @@ const Nav = ({ menuItems }) => {
   return (
     <ul className={styles.navList}>
       {menuItems.map(({ text, link }) => (
-        <Link to={link}>
+        <Link key={text} to={link}>
           <li
             className={styles.navLinks}
             sx={{

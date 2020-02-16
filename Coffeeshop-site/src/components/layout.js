@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-// ovo koristit odsad pa nadalje, stavi ga u sve šta ima styleove
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "./Navigation"

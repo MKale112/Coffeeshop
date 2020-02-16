@@ -5,7 +5,7 @@ module.exports = {
     menuItems: [
       {
         text: "THE CREW",
-        link: "../",
+        link: "../about",
       },
       {
         text: "SHOP",
@@ -26,7 +26,7 @@ module.exports = {
         link: "",
       },
       {
-        text: "©THEBREWCREW",
+        text: "©2019 THEBREWCREW",
         link: "../",
       },
       {
@@ -114,6 +114,11 @@ module.exports = {
         price: "5$",
         category: "Dark",
       },
+    ],
+    members: [
+      { name: "Brian Milbert", email: "bmilbert@gmail.com" },
+      { name: "Fablo Escobar", email: "notthatescobar@gmail.com" },
+      { name: "Some Redhead", email: "someredhead@gmail.com" },
     ],
     author: `@gatsbyjs`,
   },

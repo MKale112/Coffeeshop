@@ -48,7 +48,7 @@ const Services = () => {
             fontSize: [14, 16, 18],
           }}
         >
-          Buy your beans straight from the roasters- No man in the middle
+          Buy your beans straight from the roasters! No middle man!
         </p>
       </div>
       <div className={styles.serviceContainer}>

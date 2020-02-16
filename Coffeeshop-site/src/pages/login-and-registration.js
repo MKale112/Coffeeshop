@@ -3,60 +3,47 @@ import { jsx } from "theme-ui"
 import React from "react"
 import Layout from "../components/layout"
 import BackgroundImage from "gatsby-background-image"
+import styles from "../components/login.module.css"
 
 const Login = () => (
-  <div
-    sx={{
-      bg: "primaryWhite",
-      borderRadius: "10px",
-      m: 50,
-      boxShadow: "0px 7px 7px ",
-    }}
-  >
+  <div className={styles.formBox}>
     <form
+      className={styles.formBlock}
       sx={{
-        display: "flex",
-        flexDirection: "column",
         p: 30,
         maxWidth: "400px",
       }}
     >
-      <h2>LOGIN TO AN EXISTING ACCOUNT </h2>
+      <h2 sx={{ fontSize: [20, 24, 28] }}>LOGIN TO AN EXISTING ACCOUNT </h2>
       <div
         sx={{
           display: "flex",
           flexDirection: "column",
           maxWidth: "200px",
+          maxHeight: "500px",
         }}
       >
-        <input type="text" placeholder="Username" />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="button" value="LOGIN" sx={{ alignSelf: "flex-end" }} />
+        <input sx={{ fontSize: 12 }} type="text" placeholder="Username" />
+        <input sx={{ fontSize: 12 }} type="text" placeholder="Email" />
+        <input sx={{ fontSize: 12 }} type="password" placeholder="Password" />
       </div>
+      <a href="../" className={styles.linkBtn}>
+        <input className={styles.lrButton} type="button" value="LOGIN" />
+      </a>
     </form>
   </div>
 )
 
 const Register = () => (
-  <div
-    sx={{
-      bg: "primaryWhite",
-      borderRadius: "10px",
-      m: 50,
-      boxShadow: "0px 7px 7px ",
-    }}
-  >
+  <div className={styles.formBox}>
     <form
+      className={styles.formBlock}
       sx={{
-        display: "flex",
-        flexDirection: "column",
         p: 30,
         maxWidth: "400px",
-        height: "400px",
       }}
     >
-      <h2>DON'T HAVE AN ACCOUNT? MAKE ONE! </h2>
+      <h2 sx={{ fontSize: [20, 24, 28] }}>DON'T HAVE AN ACCOUNT? MAKE ONE! </h2>
       <div
         sx={{
           display: "flex",
@@ -64,22 +51,50 @@ const Register = () => (
           maxWidth: "200px",
         }}
       >
-        <input type="text" placeholder="Username" />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="password" placeholder="Repeat the password once more" />
+        <input sx={{ fontSize: 12 }} type="text" placeholder="Username" />
+        <input sx={{ fontSize: 12 }} type="text" placeholder="Email" />
+        <input sx={{ fontSize: 12 }} type="password" placeholder="Password" />
+        <input
+          sx={{ fontSize: 12 }}
+          type="password"
+          placeholder="Repeat the password"
+        />
       </div>
-      <div sx={{ display: "flex", flexDirection: "row" }}>
-        <h4>Date of Birth: </h4>
-        <input type="date" />
+      <div className={styles.dataInputHorizontal}>
+        <h4 sx={{ fontSize: [10, 12, 14] }}>Date of Birth: </h4>
+        <input className={styles.inputDate} type="date" />
       </div>
-      <div sx={{ display: "flex", flexDirection: "row" }}>
-        <h4>Gender: </h4>
-        <input type="radio" id="male" name="gender" value="male" />
-        <input type="radio" id="female" name="gender" value="female" />
-        <input type="radio" id="other" name="gender" value="other" />
+      <div className={styles.dataInputHorizontal}>
+        <h4 sx={{ fontSize: [10, 12, 14] }}>Gender: </h4>
+        <input
+          className={styles.inputRadio}
+          type="radio"
+          id="male"
+          name="gender"
+          value="male"
+          checked="checked"
+        />
+        Male
+        <input
+          className={styles.inputRadio}
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+        />
+        Female
+        <input
+          className={styles.inputRadio}
+          type="radio"
+          id="other"
+          name="gender"
+          value="other"
+        />
+        Other
       </div>
-      <input type="button" value="SIGN UP" />
+      <a href="../" className={styles.linkBtn}>
+        <input className={styles.lrButton} type="button" value="SIGN UP" />
+      </a>
     </form>
   </div>
 )
@@ -90,13 +105,7 @@ const LoginAndRegistration = props => {
     <Layout>
       <BackgroundImage
         fluid={heroImage.sharp.fluid}
-        sx={{
-          backgroundSize: "cover",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        className={styles.formContainer}
       >
         <Login />
         <Register />

@@ -29,7 +29,7 @@ export const query = graphql`
     heroImage: file(relativePath: { eq: "images/barista.jpg" }) {
       id
       sharp: childImageSharp {
-        fluid(maxWidth: 1920, maxHeight: 1800, fit: CONTAIN) {
+        fluid(maxWidth: 1920, maxHeight: 1800, fit: COVER, cropFocus: CENTER) {
           ...GatsbyImageSharpFluid
         }
       }

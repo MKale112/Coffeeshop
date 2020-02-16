@@ -28,10 +28,33 @@
   text-align: center;
 }
 
+@media screen and (max-width: 52em) {
+  .servicesBlock {
+    justify-content: center;
+    padding: 40px 50px;
+    justify-content: space-around;
+    margin: 20px;
+    height: 500px;
+  }
+
+  .serviceContainer {
+    padding: 10px 10px;
+    max-width: 100px;
+    height: 250px;
+  }
+
+  .logoImg {
+    max-width: 55px;
+  }
+}
+
 @media screen and (max-width: 40em) {
   .servicesBlock {
     justify-content: center;
-    padding: 30px 5px;
+    padding: 70px 50px;
+    justify-content: space-around;
+    margin: 20px;
+    height: 500px;
   }
 
   .serviceContainer {

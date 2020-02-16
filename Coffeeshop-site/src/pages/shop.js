@@ -48,7 +48,7 @@ class Shop extends Component {
         product.productName
           .toLowerCase()
           .includes(searchPhrase.toLowerCase()) &&
-        filterChoice.toLowerCase() == "all"
+        filterChoice.toLowerCase() === "all"
       )
         return product
     })
@@ -64,7 +64,7 @@ class Shop extends Component {
                 flexDirection: "row",
                 justifyContent: "space-evenly",
                 alignItems: "center",
-                padding: "100px 0px 20px 0px",
+                padding: "130px 0px 20px 0px",
               }}
             >
               <div
@@ -72,6 +72,7 @@ class Shop extends Component {
                   display: "flex",
                   flexDirection: "row",
                   alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
                 <h2
@@ -80,7 +81,7 @@ class Shop extends Component {
                     fontWeight: "heading",
                     px: 1,
                     m: 0,
-                    fontSize: [16, 20, 24],
+                    fontSize: [16, 24, 36],
                   }}
                 >
                   Search directly:
@@ -92,6 +93,7 @@ class Shop extends Component {
                   display: "flex",
                   flexDirection: "row",
                   alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
                 <h2
@@ -100,7 +102,7 @@ class Shop extends Component {
                     fontWeight: "heading",
                     px: 1,
                     m: 0,
-                    fontSize: [16, 20, 24],
+                    fontSize: [16, 24, 36],
                   }}
                 >
                   Filter by category:

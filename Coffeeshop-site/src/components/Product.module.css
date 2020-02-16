@@ -61,3 +61,36 @@
 
   z-index: 1;
 }
+
+.buttons {
+  max-width: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.purchaseAdd {
+  color: #a91b08;
+  margin: 5px 10px 5px 5px;
+  background-color: #ffffff;
+  border: 2px solid #a91b08;
+}
+
+.purchaseAdd:hover {
+  color: #a91b08;
+  background-color: #f2f2f2;
+  border: 2px solid #871506;
+}
+
+.purchaseBuy {
+  margin: 5px 10px 5px 5px;
+  background-color: #a91b08;
+  border: 1px solid transparent;
+}
+
+.purchaseBuy:hover {
+  background-color: #871506;
+  border: 1px solid transparent;
+}
