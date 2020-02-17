@@ -1,8 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 import styles from "./footer.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 

@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { Component } from "react"
 
 const Filterbox = ({ filterChange }) => {
   return (

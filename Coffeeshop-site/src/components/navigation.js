@@ -1,19 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
-import { useEffect, useRef, useState } from "react"
 import { Link } from "gatsby"
 import logo from "../images/vectors/mill.svg"
-import Container from "./container"
 import styles from "./navigation.module.css"
-import {
-  Navbar,
-  //Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
 
 const Logo = () => (
   <a
