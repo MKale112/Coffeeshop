@@ -4,7 +4,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "./navigation"
 import Footer from "./footer"
-import "../components/layout.css"
+import "./layout.css"
 
 const SiteContainer = props => (
   <div

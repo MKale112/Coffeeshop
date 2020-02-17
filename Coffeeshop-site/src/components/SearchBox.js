@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { Component } from "react"
+import React from "react"
 
-const SearchBox = ({ searchChange }) => {
+const Searchbox = ({ searchChange }) => {
   return (
     <div>
       <input
@@ -20,4 +20,4 @@ const SearchBox = ({ searchChange }) => {
   )
 }
 
-export default SearchBox
+export default Searchbox

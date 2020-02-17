@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 import Services from "../components/services"
 import SEO from "../components/seo"
 import styles from "../components/landing.module.css"
-import Carousel from "react-bootstrap"
+import Carousel from "react-bootstrap/Carousel"
 
 const IndexPage = ({ data }) => {
   const { heroImages } = data
@@ -99,19 +99,6 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage
-
-// export const query = graphql`
-//   {
-//     heroImage: file(relativePath: { eq: "images/barista.jpg" }) {
-//       id
-//       sharp: childImageSharp {
-//         fluid(maxWidth: 1920, maxHeight: 1800, fit: COVER, cropFocus: CENTER) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
 
 export const query = graphql`
   {

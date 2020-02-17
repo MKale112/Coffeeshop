@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import React, { Component } from "react"
 
-const FilterBox = ({ filterChange }) => {
+const Filterbox = ({ filterChange }) => {
   return (
     <div>
       <select
@@ -20,4 +20,4 @@ const FilterBox = ({ filterChange }) => {
   )
 }
 
-export default FilterBox
+export default Filterbox

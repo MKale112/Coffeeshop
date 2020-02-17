@@ -3,11 +3,11 @@ import { jsx } from "theme-ui"
 import React, { Component } from "react"
 import Layout from "../components/layout"
 import Container from "../components/container"
-import ShopGrid from "../components/shopgrid"
+import Shopgrid from "../components/shopgrid"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-import SearchBox from "../components/searchbox"
-import FilterBox from "../components/filterbox"
+import Searchbox from "../components/searchbox"
+import Filterbox from "../components/filterbox"
 import SEO from "../components/seo"
 
 class Shop extends Component {
@@ -89,7 +89,7 @@ class Shop extends Component {
                 >
                   Search directly:
                 </h2>
-                <SearchBox searchChange={this.onSearchChange} />
+                <Searchbox searchChange={this.onSearchChange} />
               </div>
               <div
                 sx={{
@@ -110,10 +110,10 @@ class Shop extends Component {
                 >
                   Filter by category:
                 </h2>
-                <FilterBox filterChange={this.onFilterChange} />
+                <Filterbox filterChange={this.onFilterChange} />
               </div>
             </Container>
-            <ShopGrid products={filteredProducts} />
+            <Shopgrid products={filteredProducts} />
           </Container>
         </Layout>
       </>

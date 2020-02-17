@@ -2,7 +2,7 @@ import React from "react"
 import Product from "./product"
 import styles from "./shopgrid.module.css"
 
-const ShopGrid = ({ products }) => {
+const Shopgrid = ({ products }) => {
   const itemList = products.map((product, i) => {
     return (
       <Product
@@ -17,4 +17,4 @@ const ShopGrid = ({ products }) => {
   return <div className={styles.cardContainer}>{itemList}</div>
 }
 
-export default ShopGrid
+export default Shopgrid
