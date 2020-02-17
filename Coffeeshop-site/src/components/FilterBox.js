@@ -1,9 +1,14 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React, { Component } from "react"
 
 const FilterBox = ({ filterChange }) => {
   return (
     <div>
-      <select onChange={filterChange}>
+      <select
+        sx={{ height: "40px", width: ["100", "140px", "180px"] }}
+        onChange={filterChange}
+      >
         <option value="All">All</option>
         <option value="SingleOrigin">Single Origin</option>
         <option value="FactoryRoast">Factory Roast</option>

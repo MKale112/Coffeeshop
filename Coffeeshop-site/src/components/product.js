@@ -45,7 +45,10 @@ const Product = ({ imgPath, productName, itemDescription, price }) => {
       </div>
       <div className={styles.description}>
         <h4> {productName} </h4>
-        <p sx={{ fontSize: [12, 14, 16] }}> {itemDescription} </p>
+        <p className={styles.paragraph} sx={{ fontSize: [12, 14, 16] }}>
+          {" "}
+          {itemDescription}{" "}
+        </p>
       </div>
       <div className={styles.buttons}>
         <ButtonToolbar>

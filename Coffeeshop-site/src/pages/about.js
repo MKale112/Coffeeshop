@@ -4,20 +4,44 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
+import styles from "../components/about.module.css"
 
-const Members = ({ data }) => {
-  const { memberImages, memberInfo } = data
+const Member = ({ profileImage, emailName }) => {
+  console.log(emailName[0])
+  return (
+    <div className={styles.memberCard}>
+      <Img
+        fluid={profileImage.node.sharp.fluid}
+        className={styles.profilePic}
+      />
+      <div className={styles.info}>
+        <h5 sx={{ m: 0, fontSize: [12, 14, 18] }}>{emailName.name}</h5>
+        <p sx={{ fontSize: [10, 14, 16] }}>{emailName.email}</p>
+      </div>
+    </div>
+  )
+}
 
-  return <div></div>
+const Members = ({ info, images }) => {
+  console.log(info)
+  console.log(images)
+  const membersArray = images.map((image, i) => {
+    // return { image: image, info: info[i] }
+    return <Member profileImage={image} emailName={info[i]} />
+  })
+
+  return <div className={styles.memberContainer}>{membersArray}</div>
 }
 
 const About = ({ data }) => {
-  const { heroImage } = data
+  const { heroImage, memberImages, memberInfo } = data
+  console.log(memberImages.edges)
+  console.log(memberInfo.siteMetadata.members)
   return (
     <Layout>
       <Img fluid={heroImage.sharp.fluid} />
-      <div sx={{}}>
-        <div>
+      <div className={styles.aboutContainer}>
+        <div className={styles.section}>
           <h3
             sx={{
               fontFamily: "wacky",
@@ -27,12 +51,20 @@ const About = ({ data }) => {
           >
             PERFECT COFFEE MOMENTS and WELCOMING ATMOSPHERE
           </h3>
-          <p>
+          <p
+            sx={{
+              fontSize: [12, 14, 18],
+            }}
+          >
             The birth of the Coffeeshop Company can be traced back to 1999 when
             the first Coffeeshop opened its doors to its guests on a historical
             September day in Vienna.{" "}
           </p>
-          <p>
+          <p
+            sx={{
+              fontSize: [12, 14, 18],
+            }}
+          >
             Characterized by a very special and unimitable atmosphere, the
             Coffeeshop Company is a new, unique interpretation of the
             ever-popular traditional Viennese coffee house culuture, which was
@@ -40,7 +72,7 @@ const About = ({ data }) => {
             2011.
           </p>
         </div>
-        <div>
+        <div className={styles.section}>
           <h3
             sx={{
               fontFamily: "wacky",
@@ -50,7 +82,10 @@ const About = ({ data }) => {
           >
             THE MEMBERS
           </h3>
-          <div></div>
+          <Members
+            info={memberInfo.siteMetadata.members}
+            images={memberImages.edges}
+          />
         </div>
       </div>
     </Layout>
@@ -75,7 +110,12 @@ export const query = graphql`
       edges {
         node {
           sharp: childImageSharp {
-            fluid(maxHeight: 10, maxWidth: 10, cropFocus: CENTER, fit: COVER) {
+            fluid(
+              maxHeight: 400
+              maxWidth: 300
+              cropFocus: CENTER
+              fit: COVER
+            ) {
               ...GatsbyImageSharpFluid
             }
           }

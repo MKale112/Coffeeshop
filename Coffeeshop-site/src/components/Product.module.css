@@ -34,6 +34,9 @@
   overflow-y: scroll;
 }
 
+.paragraph {
+  margin-bottom: 0px;
+}
 .price {
   color: #f0f0f0;
   font-weight: 400;
@@ -51,6 +54,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  box-shadow: 1px 1px 3px #363636;
 
   border-right: 1px solid #363636;
   border-bottom: 1px solid #363636;

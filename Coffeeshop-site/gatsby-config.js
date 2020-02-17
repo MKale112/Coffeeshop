@@ -117,7 +117,7 @@ module.exports = {
     ],
     members: [
       { name: "Brian Milbert", email: "bmilbert@gmail.com" },
-      { name: "Fablo Escobar", email: "notthatescobar@gmail.com" },
+      { name: "Fablo Escobar", email: "notThatOne@gmail.com" },
       { name: "Some Redhead", email: "someredhead@gmail.com" },
     ],
     author: `@gatsbyjs`,

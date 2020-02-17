@@ -92,7 +92,10 @@ const Navigation = ({ menuItems }) => {
       className={styles.customColor}
     >
       <Logo />
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle
+        className={styles.hamburgerMenu}
+        aria-controls="basic-navbar-nav"
+      />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav menuItems={menuItems} />
       </Navbar.Collapse>

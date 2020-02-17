@@ -18,3 +18,10 @@
   /* background: linear-gradient(#0c0c0c 0%, rgba(12, 12, 12, 0)); */
   background-color: #0c0c0c;
 }
+
+.hamburgerMenu {
+  color: white;
+  border: 2px solid white;
+  margin-right: 10px;
+  opacity: 1;
+}
