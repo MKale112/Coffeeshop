@@ -54,7 +54,6 @@ const BlogPost = ({ poster, title, comments }) => {
 const Blog = props => {
   const { heroImage } = props.data
   console.log(heroImage)
-  const fourComments = ["Comment1", "Comment2", "Comment3", "Comment4"]
   return (
     <Layout sx={{ fontSize: [24, 48, 72] }}>
       <SEO title={"Blog"} description={"Discuss with us"} />
