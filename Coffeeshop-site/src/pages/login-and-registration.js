@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import Layout from "../components/layout"
