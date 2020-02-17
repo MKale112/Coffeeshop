@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { jsx } from "theme-ui"
 import React from "react"
 // import Img from "gatsby"
-import mockupImage from "../images/product image/mockup1.jpg"
+import mockupImage from "../images/productImage/mockup1.jpg"
 import styles from "./Product.module.css"
 import { Modal, ButtonToolbar, Button } from "react-bootstrap"
 

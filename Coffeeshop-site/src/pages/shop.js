@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React, { Component } from "react"
-import Layout from "../components/layout"
-import Container from "../components/container"
+import Layout from "../components/Layout"
+import Container from "../components/Container"
 import ShopGrid from "../components/ShopGrid"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
@@ -29,7 +29,7 @@ class Shop extends Component {
   }
 
   onFilterChange = event => {
-    console.log(event)
+    // console.log(event)
     this.setState({ filterChoice: event.target.value })
   }
 

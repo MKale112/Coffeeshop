@@ -34,7 +34,7 @@ const Socials = () => {
       }
     }
   `)
-  console.log(data.slike.edges)
+  // console.log(data.slike.edges)
   const images = data.slike.edges.map(objekt => {
     // console.log(objekt.node.sharp.fluid)
     // console.log("deri")
