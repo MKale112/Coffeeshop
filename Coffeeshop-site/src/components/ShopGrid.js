@@ -1,6 +1,6 @@
 import React from "react"
-import Product from "./Product"
-import styles from "./ShopGrid.module.css"
+import Product from "./product"
+import styles from "./shopgrid.module.css"
 
 const ShopGrid = ({ products }) => {
   const itemList = products.map((product, i) => {

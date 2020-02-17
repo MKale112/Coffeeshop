@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Navigation from "./Navigation"
-import Footer from "./Footer"
+import Navigation from "./navigation"
+import Footer from "./footer"
 import "../components/layout.css"
 
 const SiteContainer = props => (

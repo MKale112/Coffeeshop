@@ -4,7 +4,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 // import Img from "gatsby"
 import mockupImage from "../images/productImage/mockup1.jpg"
-import styles from "./Product.module.css"
+import styles from "./product.module.css"
 import { Modal, ButtonToolbar, Button } from "react-bootstrap"
 
 function MyVerticallyCenteredModal(props) {

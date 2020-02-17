@@ -2,13 +2,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Services from "../components/Services"
+import Services from "../components/services"
 import SEO from "../components/seo"
 import styles from "../components/landing.module.css"
-import Carousel from "react-bootstrap/Carousel"
+import Carousel from "react-bootstrap"
 
 const IndexPage = ({ data }) => {
   const { heroImages } = data

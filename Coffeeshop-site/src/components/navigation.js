@@ -4,8 +4,8 @@ import React from "react"
 import { useEffect, useRef, useState } from "react"
 import { Link } from "gatsby"
 import logo from "../images/vectors/mill.svg"
-import Container from "./Container"
-import styles from "./Navigation.module.css"
+import Container from "./container"
+import styles from "./navigation.module.css"
 import {
   Navbar,
   //Nav,

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import BackgroundImage from "gatsby-background-image"
 import styles from "../components/login.module.css"
 import SEO from "../components/seo"

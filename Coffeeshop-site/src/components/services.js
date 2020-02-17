@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import styles from "./Services.module.css"
+import styles from "./services.module.css"
 import crew from "../images/SVGs/meet-the-crew-logo.svg"
 import bag from "../images/SVGs/coffee-bag.svg"
 import blog from "../images/SVGs/blog-logo.svg"

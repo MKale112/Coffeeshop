@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React, { Component } from "react"
-import Layout from "../components/Layout"
-import Container from "../components/Container"
-import ShopGrid from "../components/ShopGrid"
+import Layout from "../components/layout"
+import Container from "../components/container"
+import ShopGrid from "../components/shopgrid"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-import SearchBox from "../components/SearchBox"
-import FilterBox from "../components/FilterBox"
+import SearchBox from "../components/searchbox"
+import FilterBox from "../components/filterbox"
 import SEO from "../components/seo"
 
 class Shop extends Component {
