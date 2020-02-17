@@ -16,39 +16,39 @@ import {
 } from "react-bootstrap"
 
 const Logo = () => (
-  <Link to="../">
-    <div
+  <a
+    href="../"
+    sx={{
+      p: 3,
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100%",
+    }}
+  >
+    <img
+      src={logo}
       sx={{
-        p: 3,
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
+        width: ["25px", "40px", "50px"],
+        height: ["25px", "40px", "50px"],
+      }}
+      alt="company logo"
+    />
+    <h2
+      sx={{
+        m: 0,
+        alignSelf: "center",
+        fontFamily: "wacky",
+        fontWeight: "heading",
+        fontSize: [24, 36, 42],
+        color: "primaryWhite",
+        px: 2,
       }}
     >
-      <img
-        src={logo}
-        sx={{
-          width: ["25px", "40px", "50px"],
-          height: ["25px", "40px", "50px"],
-        }}
-        alt="company logo"
-      />
-      <h2
-        sx={{
-          m: 0,
-          alignSelf: "center",
-          fontFamily: "wacky",
-          fontWeight: "heading",
-          fontSize: [24, 36, 42],
-          color: "primaryWhite",
-          px: 2,
-        }}
-      >
-        THEBREWCREW
-      </h2>
-    </div>
-  </Link>
+      THEBREWCREW
+    </h2>
+  </a>
 )
 
 const Nav = ({ menuItems }) => {

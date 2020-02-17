@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
 import styles from "../components/about.module.css"
+import SEO from "../components/seo"
 
 const Member = ({ profileImage, emailName }) => {
   console.log(emailName[0])
@@ -39,6 +40,8 @@ const About = ({ data }) => {
   console.log(memberInfo.siteMetadata.members)
   return (
     <Layout>
+      <SEO title={"About Us"} description={"About us"} />
+
       <Img fluid={heroImage.sharp.fluid} />
       <div className={styles.aboutContainer}>
         <div className={styles.section}>

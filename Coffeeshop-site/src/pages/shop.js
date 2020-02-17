@@ -8,6 +8,7 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import SearchBox from "../components/SearchBox"
 import FilterBox from "../components/FilterBox"
+import SEO from "../components/seo"
 
 class Shop extends Component {
   constructor(props) {
@@ -56,6 +57,8 @@ class Shop extends Component {
     return (
       <>
         <Layout>
+          <SEO title={"Shop"} description={"The Brew Crew Shop"} />
+
           <Container>
             <Img fluid={heroImage.sharp.fluid} />
             <Container // zašto sve ove SX-ove od doli nemogu stavit u Container, neće da radi onda?!

@@ -1,0 +1,30 @@
+.carouselContainer {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.callToAction {
+  padding: 20px 30px;
+  margin: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  background-color: rgba(169, 27, 8, 0.8);
+  transition: background-color 0.3s;
+}
+
+.callToAction:hover {
+  transform: scale(1, 1);
+  background-color: #871506;
+  text-decoration: none;
+}
+
+h3 {
+  margin-bottom: 30px;
+}

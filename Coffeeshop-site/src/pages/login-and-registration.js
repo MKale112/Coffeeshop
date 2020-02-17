@@ -4,6 +4,7 @@ import React from "react"
 import Layout from "../components/layout"
 import BackgroundImage from "gatsby-background-image"
 import styles from "../components/login.module.css"
+import SEO from "../components/seo"
 
 const Login = () => (
   <div className={styles.formBox}>
@@ -103,6 +104,11 @@ const LoginAndRegistration = props => {
   const { heroImage } = props.data
   return (
     <Layout>
+      <SEO
+        title={"Login and Registration"}
+        description={"Login and Registration"}
+      />
+
       <BackgroundImage
         fluid={heroImage.sharp.fluid}
         className={styles.formContainer}

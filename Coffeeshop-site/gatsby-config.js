@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `The Brew Crew`,
     description: `A place for you to order your favourite flavours of roasts. And enjoy good coffee at our shop in town.`,
+    author: "Matej Kalebic",
     menuItems: [
       {
         text: "THE CREW",
@@ -39,14 +40,14 @@ module.exports = {
         imgPath:
           "/Users/admin/Documents/GitHub/Coffeeshop/Coffeeshop/Coffeeshop-site/static/mockup1.jpg",
         productName: "Colombian Blue",
-        itemDescription: "From the rolling hills of Columbia.",
+        itemDescription: "From the rolling hills of Columbia. Wonderful aroma",
         price: "7$",
         category: "SingleOrigin",
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
         productName: "Costa Rica Tarrazu",
-        itemDescription: "Costa Rica's finest beans. Do partake!",
+        itemDescription: "Costa Rica's finest beans. You gotta try this one.",
         price: "8$",
         category: "SingleOrigin",
       },
@@ -77,8 +78,7 @@ module.exports = {
       {
         imgPath: "src/images/product image/mockup1.jpg",
         productName: "Bright Note",
-        itemDescription:
-          "Notes of TANGERINE, CHOCOLATE & MACADAMIA. Sunshine in a cup.",
+        itemDescription: "Notes of TANGERINE & MACADAMIA. Sunshine in a cup.",
         price: "5$",
         category: "Chocolately Tangy",
       },
@@ -102,7 +102,7 @@ module.exports = {
         imgPath: "src/images/product image/mockup1.jpg",
         productName: "Firehouse Blend",
         itemDescription:
-          "Notes of CHOCOLATE ORANGE, FOREST FRUITS and CINNAMON. A free spirit.",
+          "Notes of CHOCOLATE ORANGE & FOREST FRUITS. A free spirit.",
         price: "6$",
         category: "Chocolately Tangy",
       },
@@ -110,7 +110,7 @@ module.exports = {
         imgPath: "src/images/product image/mockup1.jpg",
         productName: "Crisis Coffee",
         itemDescription:
-          "Notes of BLACKCURRANT, HAZELNUTS and CINNAMON. When you need a lift.",
+          "Notes of BLACKCURRANT & HAZELNUTS. When you need a lift.",
         price: "5$",
         category: "Dark",
       },

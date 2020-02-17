@@ -5,12 +5,16 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { Accordion, Card } from "react-bootstrap"
 import styles from "../components/blog.module.css"
+import SEO from "../components/seo"
 
 const BlogPost = ({ poster, title, comments }) => {
   const commentArray = comments.map(entry => {
     return (
       <div className={styles.cardStyles}>
-        <h6 sx={{ color: "primaryRed", m: 0 }}>{entry.name}</h6>: {entry.said}
+        <h6 sx={{ color: "primaryRed", m: 0, fontWeight: "heading" }}>
+          {entry.name}
+        </h6>
+        : {entry.said}
       </div>
     )
   })
@@ -29,8 +33,8 @@ const BlogPost = ({ poster, title, comments }) => {
       >
         {userLetter}
       </div>
-      <Accordion className={styles.blogpost} defaultActiveKey="0">
-        <Card>
+      <Accordion className={styles.blogpost}>
+        <Card className={styles.blogCard}>
           <Accordion.Toggle
             className={styles.cardHeader}
             as={Card.Header}
@@ -53,6 +57,8 @@ const Blog = props => {
   const fourComments = ["Comment1", "Comment2", "Comment3", "Comment4"]
   return (
     <Layout sx={{ fontSize: [24, 48, 72] }}>
+      <SEO title={"Blog"} description={"Discuss with us"} />
+
       <Img fluid={heroImage.sharp.fluid} />
       <div className={styles.blogContainer}>
         <h3 sx={{ margin: "35px 0px" }}>FEEL FREE TO DISCUSS</h3>

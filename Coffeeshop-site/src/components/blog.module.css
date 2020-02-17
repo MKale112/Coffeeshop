@@ -9,18 +9,22 @@
 }
 
 .blogpost {
-  padding: 0px 50px 20px 10px;
+  padding: 0px 50px 40px 10px;
   width: 100%;
   overflow: auto;
 }
 
 .cardStyles {
-  border-bottom: 1px solid rgba(12, 12, 12, 0.2);
+  border-bottom: 2px solid rgba(12, 12, 12, 0.2);
   padding: 10px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
+}
+
+.blogCard {
+  border: 1px solid #a91b08;
 }
 
 .dot {
@@ -38,8 +42,7 @@
 
   box-shadow: 1px 1px 3px #363636;
 
-  border-right: 1px solid #363636;
-  border-bottom: 1px solid #363636;
+  border: 2px solid #f0f0f0;
 }
 
 .profileAndCard {
