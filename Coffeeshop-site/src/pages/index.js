@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
               fluid={heroImages.edges[0].node.sharp.fluid}
               alt="First slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption sx={{ zIndex: 1 }}>
               <div className={styles.carouselContainer}>
                 <h3
                   sx={{
@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
               alt="Third slide"
             />
 
-            <Carousel.Caption>
+            <Carousel.Caption sx={{ zIndex: 1 }}>
               <div className={styles.carouselContainer}>
                 <h3 sx={{ fontSize: [24, 36, 64], fontWeight: "heading" }}>
                   TALK COFFEE WITH US
@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
               alt="Third slide"
             />
 
-            <Carousel.Caption>
+            <Carousel.Caption sx={{ zIndex: 1 }}>
               <div className={styles.carouselContainer}>
                 <h3 sx={{ fontSize: [24, 36, 64], fontWeight: "heading" }}>
                   HAVE A CUP

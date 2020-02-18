@@ -1,4 +1,5 @@
 .carouselContainer {
+  z-index: 1;
   margin: 0px;
   display: flex;
   flex-direction: column;
