@@ -14,7 +14,7 @@ const Services = () => {
           sx={{
             fontFamily: "wacky",
             fontWeight: "heading",
-            fontSize: [14, 20, 24],
+            fontSize: [16, 18, 24],
           }}
         >
           MEET THE CREW
@@ -22,8 +22,8 @@ const Services = () => {
         <p
           sx={{
             fontFamily: "wacky",
-            fontWeight: "body",
-            fontSize: [14, 16, 18],
+            fontWeight: "bold",
+            fontSize: [14, 16, 20],
           }}
         >
           The dedicated people who made all this possible
@@ -35,7 +35,7 @@ const Services = () => {
           sx={{
             fontFamily: "wacky",
             fontWeight: "heading",
-            fontSize: [14, 20, 24],
+            fontSize: [16, 18, 24],
           }}
         >
           BUY OUR BEANS
@@ -43,8 +43,8 @@ const Services = () => {
         <p
           sx={{
             fontFamily: "wacky",
-            fontWeight: "body",
-            fontSize: [14, 16, 18],
+            fontWeight: "bold",
+            fontSize: [14, 16, 20],
           }}
         >
           Buy your beans straight from the roasters! No middle man!
@@ -56,7 +56,7 @@ const Services = () => {
           sx={{
             fontFamily: "wacky",
             fontWeight: "heading",
-            fontSize: [14, 20, 24],
+            fontSize: [16, 18, 24],
           }}
         >
           TALK COFFEE
@@ -64,8 +64,8 @@ const Services = () => {
         <p
           sx={{
             fontFamily: "wacky",
-            fontWeight: "body",
-            fontSize: [14, 16, 18],
+            fontWeight: "bold",
+            fontSize: [14, 16, 20],
           }}
         >
           Discuss your favourite roasts and blends right here!

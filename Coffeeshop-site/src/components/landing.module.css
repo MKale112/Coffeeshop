@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.carouselOrederedList {
+  z-index: 1;
+}
+
 .callToAction {
   padding: 20px 30px;
   margin: 10px;

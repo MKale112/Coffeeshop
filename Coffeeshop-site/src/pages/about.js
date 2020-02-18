@@ -51,6 +51,7 @@ const About = ({ data }) => {
               fontFamily: "wacky",
               fontWeight: "heading",
               fontSize: [20, 32, 42],
+              marginBottom: "10x",
             }}
           >
             PERFECT COFFEE MOMENTS and WELCOMING ATMOSPHERE

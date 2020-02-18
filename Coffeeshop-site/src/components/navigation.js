@@ -6,17 +6,7 @@ import styles from "./navigation.module.css"
 import { Navbar } from "react-bootstrap"
 
 const Logo = () => (
-  <a
-    href="../"
-    sx={{
-      p: 3,
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "100%",
-    }}
-  >
+  <a href="../" className={styles.logoLink}>
     <img
       src={logo}
       sx={{

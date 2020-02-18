@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
       <Layout>
         <SEO title={"The Brew Crew"} description={"Landing page"} />
 
-        <Carousel>
+        <Carousel className={styles.carouselOrederedList}>
           <Carousel.Item>
             <Img
               style={{ height: "80vh", width: "100%" }}
@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
               <div className={styles.carouselContainer}>
                 <h3
                   sx={{
-                    fontSize: [24, 36, 64],
+                    fontSize: [36, 48, 64],
                     fontWeight: "heading",
                   }}
                 >
@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => {
 
             <Carousel.Caption sx={{ zIndex: 1 }}>
               <div className={styles.carouselContainer}>
-                <h3 sx={{ fontSize: [24, 36, 64], fontWeight: "heading" }}>
+                <h3 sx={{ fontSize: [36, 48, 64], fontWeight: "heading" }}>
                   TALK COFFEE WITH US
                 </h3>
                 <a
@@ -78,7 +78,7 @@ const IndexPage = ({ data }) => {
 
             <Carousel.Caption sx={{ zIndex: 1 }}>
               <div className={styles.carouselContainer}>
-                <h3 sx={{ fontSize: [24, 36, 64], fontWeight: "heading" }}>
+                <h3 sx={{ fontSize: [36, 48, 64], fontWeight: "heading" }}>
                   HAVE A CUP
                 </h3>
                 <a
