@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         imgPath: "src/images/product image/mockup1.jpg",
-        productName: "Colombian Bucaramanga",
+        productName: "Colombian Bucamanga",
         itemDescription:
           "A mainstay in our classic coffee selection since the start.",
         price: "8$",

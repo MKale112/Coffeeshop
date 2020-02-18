@@ -22,6 +22,7 @@
 
 .blogButton:hover {
   text-decoration: none;
+  color: white;
   transform: scale(1.1, 1.1);
   background-color: #871506;
 }
