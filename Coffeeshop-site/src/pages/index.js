@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"

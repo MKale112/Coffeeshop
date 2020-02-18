@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import Layout from "../components/layout"

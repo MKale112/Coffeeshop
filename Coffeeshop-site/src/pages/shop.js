@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+import React, { Component } from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { Component } from "react"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import Shopgrid from "../components/shopgrid"
@@ -30,7 +30,6 @@ class Shop extends Component {
   }
 
   onFilterChange = event => {
-    // console.log(event)
     this.setState({ filterChoice: event.target.value })
   }
 
@@ -53,6 +52,7 @@ class Shop extends Component {
         filterChoice.toLowerCase() === "all"
       )
         return product
+      return null
     })
 
     return (
