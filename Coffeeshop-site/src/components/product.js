@@ -24,8 +24,12 @@ function MyVerticallyCenteredModal(props) {
         <p>You are buying {props.item} </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Cancel</Button>
-        <Button onClick={props.onHide}>{props.purpose}</Button>
+        <Button onClick={props.onHide} className={styles.cancelButton}>
+          Cancel
+        </Button>
+        <Button onClick={props.onHide} className={styles.confirmButton}>
+          {props.purpose}
+        </Button>
       </Modal.Footer>
     </Modal>
   )

@@ -103,3 +103,27 @@
   background-color: #871506;
   border: 1px solid transparent;
 }
+
+.cancelButton {
+  background-color: white;
+  color: black;
+  border: 2px solid #363636;
+}
+
+.cancelButton:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #363636;
+}
+
+.confirmButton {
+  color: white;
+  background-color: #a91b08;
+  border: 1px solid #a91b08;
+}
+
+.confirmButton:hover {
+  color: white;
+  background-color: #871506;
+  border: 1px solid #871506;
+}

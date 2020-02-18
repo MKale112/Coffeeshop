@@ -62,7 +62,7 @@ class Shop extends Component {
 
           <Container>
             <Img fluid={heroImage.sharp.fluid} />
-            <Container // zašto sve ove SX-ove od doli nemogu stavit u Container, neće da radi onda?!
+            <Container
               sx={{
                 display: "flex",
                 flexDirection: "row",
@@ -129,7 +129,7 @@ export const query = graphql`
     heroImage: file(relativePath: { eq: "images/beans.jpg" }) {
       id
       sharp: childImageSharp {
-        fluid(maxWidth: 1920, maxHeight: 800, fit: COVER, cropFocus: CENTER) {
+        fluid(maxWidth: 1920, maxHeight: 700, fit: COVER, cropFocus: CENTER) {
           ...GatsbyImageSharpFluid
         }
       }
